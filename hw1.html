@@ -6,7 +6,12 @@
   <label for="game1">Target Test</label><br>
   <input type="text" id="game1" name="game1" value="Get Ready"><br>
   <label for="name">Full Name:</label><br>
-  <input type="text" id="name" name="name" value="Sasha Braun"><br>
+  <input type="text" id="name" name="name" value="Sasha Braun" style="color:grey"><br><br>
+  <input type="text" value="Directions: put your cursor at the bottom center of your screen. Put your index and middle finger on the bottom of your mouse." size=111><br>
+  <input type="text" value="In one quick, fluid motion, flick the mouse up and try to make the cursor land as close to the bullseye as you can." size=100><br>
+  <input type="radio" id="direct" name="tions" value="Click the nearest square to see your score.">
+  <label for="direct">Click the nearest square to see your score.</label><br>
+</form>
 
 <br><br><br>
 <button type="button" onclick="alert('5 points')" style="background-color:white; border-color:black; color:white">.</button>
@@ -137,7 +142,15 @@
 <button type="button" onclick="alert('5 points')" style="background-color:white; border-color:black; color:white">.</button>
 <button type="button" onclick="alert('5 points')" style="background-color:white; border-color:black; color:white">.</button>
 <br><br><br>
-
+<form>
+  <input type="radio" id="easy" name="difficulty" value="Too Easy">
+  <label for="easy">Too Easy</label><br>
+  <input type="radio" id="hard" name="difficulty" value="Too Hard">
+  <label for="hard">Too Hard</label><br>
+  <input type="radio" id="right" name="difficulty" value="Just Right">
+  <label for="right">Just Right</label>
+</form>
+<br>
 <a href="index.html">Home Page</a>
 </body>
 </html>
