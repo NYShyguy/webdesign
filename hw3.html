@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Media</title>
+    <style>
+      video {
+        width: 100%;
+        height: auto;}
+      img {
+        width: 100%;
+        height: auto;}
+    </style>
+  </head>
+
+  <body style="background-color:powderblue;"><center>
+    <header>
+    </header>
+    <h2>Reference Image for Gear</h2>
+      <img srcset="images/hw3_480.jpg 480w,
+                  images/hw3_960.jpg 960w,
+                  images/hw3_1280.jpg 1280w,"
+           sizes="100vw"
+                src="images/hw3_480.jpg" alt="ODM Reference Pic">
+    <br>
+    <h2>Reference Gif</h2>
+    <img srcset="images/hw3_480.gif 480w,
+                images/hw3_960.gif 960w,
+                images/hw3_1280.gif 1280w,"
+         sizes="100vw"
+              src="images/hw3_480.gif" alt="Reference Gif">
+    <br>
+    <p>Some nice aot ost to work with.</p>
+    <audio controls>
+      <source src="audio/aot_slow.mp3" type="audio/mpeg">
+    </audio>
+  <li><a href="index.html">Home Page</a></li>
+  <li><a href="hw2.html">Slideshow</a></li>
+  </body>
+</html>
