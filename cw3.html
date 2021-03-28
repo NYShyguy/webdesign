@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Image</title>
+  </head>
+
+  <body>
+    <header>
+    <img srcset="images/cw3_480.jpg 480w,
+                images/cw3_960.jpg 960w,
+                images/cw3_1280.jpg 1280w,"
+         sizes="100vw"
+              src="images/cw3_480.jpg" alt="Just a Dragonite plush">
+              <!-- to see in action use 240px -->
+    <picture>
+      <source media="(min-width: 770px)" srcset="images/cw3_770.jpg">
+      <source media="(min-width: 650px)" srcset="images/cw3_650.jpg">
+      <source media="(min-width: 465px)" srcset="images/cw3_465.jpg">
+      <img src="images/cw3_770.jpg" alt="notebook" style="width:auto;">
+    </picture>
+    <br><a href="index.html">Home Page</a>
+  </body>
+</html>
