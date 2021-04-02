@@ -1,0 +1,33 @@
+body{
+  background-color: powderblue;
+  background-image: url(images/rushdie.gif);
+  background-repeat: repeat-x;
+  background size: 50%;
+}
+.p1{
+  font-style: oblique;
+  width:25%;
+  float: left;
+  text-align:left;
+  color:purple;
+}
+.p2{
+  font-style:italic;
+  width:75%;
+  float:center;
+  text-align:center;
+  color:navy;
+}
+.p3{
+  font-style: oblique;
+  width: 25%;
+  float:right;
+  text-align:right:
+  color:grey;
+}
+img{
+  position:fixed;
+  left:10px;
+  top: 10px;
+  z-index: -1;
+}
