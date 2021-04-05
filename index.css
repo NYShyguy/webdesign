@@ -1,0 +1,7 @@
+#hero2 {
+  width: 100%;
+  height: 100vh;
+  background: url("images/nightCityscape.png") top center;
+  background-size: cover;
+  position: relative;
+}
