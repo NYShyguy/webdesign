@@ -58,25 +58,13 @@ header {
     margin: 20px 0 0 0
 }
 .view p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 12px;
+    font-family: inherit;
+    font-style:  normal;
+    font-size: 16px;
     position: relative;
     color: #fff;
     padding: 10px 20px 20px;
     text-align: center
-}
-.view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000
-}
-.view a.info:hover {
-    box-shadow: 0 0 5px #000
 }
 
 .view-second img {
@@ -102,10 +90,6 @@ header {
 	transform: translate(-200px, 200px);
 	transition: all 0.2s ease-in-out;
 }
-.view-second a.info {
-    transform: translate(0px, 100px);
-	transition: all 0.2s 0.1s ease-in-out;
-}
 
 .view-second:hover .mask {
 	opacity:1;
@@ -118,8 +102,4 @@ header {
 .view-second:hover p {
     transform: translate(0px,0px);
 	transition-delay: 0.4s;
-}
-.view-second:hover a.info {
-	transform: translate(0px,0px);
-	transition-delay: 0.5s;
 }
