@@ -6,30 +6,67 @@
   position: relative;
 }
 
-@keyframes shmove {
-  0% {left:0px; top:0px;}
-  6% {left:125px; top:20px;}
-  12% {left:250px; top:40px;}
-  18% {left:375px; top:20px;}
-  25% {left:500px; top:0px;}
-  31% {left:625px; top:-20px;}
-  37% {left:750px; top:-40px;}
-  43% {left:875px; top:-20px;}
-  50% {left:1000px; top:0px;}
-  56% {left:875px; top:20px;}
-  62% {left:750px; top:40px;}
-  68% {left:625px; top: 20px;}
-  75% {left:500px; top:0px;}
-  81% {left:375px; top:-20px;}
-  87% {left:250px; top:-40px;}
-  93% {left:125px; top:-20px;}
-  100% {left: 0px; top:0px;}
+@keyframes fly {
+  0% {left:750px; top:0px;}
+  12% {left:850px; top:40px;}
+  25% {left:950px; top:0px;}
+  37% {left:1050px; top:-40px;}
+  50% {left:1150px; top:0px;}
+  62% {left:1050px; top:40px;}
+  75% {left:950px; top:0px;}
+  87% {left:850px; top:-40px;}
+  100% {left: 750px; top:0px;}
 }
 
 .heli {
   display: block;
   position: relative;
-  animation-name: shmove;
+  animation-name: fly;
   animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shmove {
+  0% {left: 1100px; top:0px;}
+  25% {left: 800px; top:0px;}
+  50% {left: 500px; top:0px;}
+  75% {left: 200px; top:0;}
+  100% {left: 50px; top:0px;}
+}
+
+@keyframes shmove2 {
+  0% {left: 1100px; top:0px;}
+  100% {left: 1100px; top:0px;}
+}
+
+.walker {
+  display: block;
+  position: relative;
+  animation-name: shmove2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.walker:hover {
+  display: block;
+  position: relative;
+  animation-name: shmove;
+  animation-duration: 8s;
+  animation-iteration-count: 3;
+}
+
+@keyframes flip{
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.monke:active {
+  display: block;
+  position: absolute;
+  animation-name: flip;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
 }
