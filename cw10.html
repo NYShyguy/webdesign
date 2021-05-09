@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Animations</title>
+
+	<style>
+	/* https://zellwk.com/blog/css-animations/
+    You create a CSS Animation by defining an animation in @keyframes.*/
+		@keyframes example1 {
+			from {background-color: purple;}
+			to {background-color: pink;}
+		}
+
+    @keyframes example5 {
+      from {background-color: pink;}
+      to {background-color: white;}
+    }
+
+		/* The element to apply the animation to */
+.box1 {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    background-color: red;
+    animation-name: example1;
+    animation-duration: 4s;
+}
+
+.box1:active {
+  animation-name: example5;
+  animation-duration: 5s;
+}
+
+@keyframes example2 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+@keyframes example4 {
+  0% {left:0px; top:0px;}
+  25% {left:250px; top:0px;}
+  50% {left:500px; top:0px;}
+  75% {left:250px; top: 0px;}
+  100% {left: 0px; top:0px;}
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    position:relative;
+    background-color: red;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: 3; /* infinite */
+}
+
+.box2:hover {
+  animation-name: example4;
+  animation-duration: 10s;
+}
+/* The animation code */
+@keyframes example3 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+.box3 {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    position: relative;
+    background-color: red;
+    animation-name: example3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+	</style>
+</head>
+<body>
+<div class="box1"></div>
+
+<div class="box2"></div>
+
+<div class="box3"></div>
+
+  <br><a href="index.html">Home Page</a>
+</body>
+</html>
