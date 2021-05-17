@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Classwork 11</title>
+
+	<style>
+	/* https://zellwk.com/blog/css-animations/
+    You create a CSS Animation by defining an animation in @keyframes.*/
+
+		/* The element to apply the animation to */
+
+
+/* The animation code */
+@keyframes move1 {
+  0% {left:0px; top:50px}
+  10% {top:0px}
+  20% {top:50px}
+  30% {top:0px}
+  40% {top:50px}
+  50% {top:0px}
+  60% {top:50px}
+  70% {top: 0px}
+  80% {top: 50px}
+  90% {top: 0px}
+  100% {left:100%; top:50px}
+}
+
+@keyframes move2 {
+  0% {left:0px; top:50px}
+  10% {top:0px}
+  20% {top:50px}
+  30% {top:0px}
+  40% {top:50px}
+  50% {top:0px}
+  60% {top:50px}
+  70% {top: 0px}
+  80% {top: 50px}
+  90% {top: 0px}
+  100% {left:100%; top:50px}
+}
+
+@keyframes move3 {
+    0%   {
+      left:0px;
+      top:100px;
+      animation-timing-function: ease-out;
+    }
+    10% {top:0px; animation-timing-function: ease-in;}
+    20% {top:100px; animation-timing-function: ease-out;}
+    30% {top:0px; animation-timing-function: ease-in;}
+    40% {top:100px; animation-timing-function: ease-out;}
+    50% {top:0px; animation-timing-function: ease-in;}
+    60% {top:100px; animation-timing-function: ease-out;}
+    70% {top:0px; animation-timing-function: ease-in;}
+    80% {top:100px; animation-timing-function: ease-out;}
+    90% {top:0px; animation-timing-function: ease-in;}
+    100% {
+      left:100%;
+      top:100px;
+    }
+}
+
+/* The element to apply the animation to */
+.box1 {
+    position: relative;
+    animation-name: move1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.box2 {
+    position: relative;
+    animation-name: move2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(20,end);
+
+}
+
+.box3 {
+    position: relative;
+    animation-name: move3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.box4 {
+    position: relative;
+    animation-name: move1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+
+.box3 img{
+	width:20%;
+	height:10%;
+}
+.box2 img{
+	width:20%;
+	height:10%;
+}
+.box1 img{
+	width:20%;
+	height:10%;
+	left: 200px;
+}
+.box4 img{
+	width:20%;
+	height:10%;
+}
+
+	</style>
+</head>
+<body>
+
+<div class="box3">
+	<img src="images/rabbit1.png">
+</div>
+<div class="box2">
+	<img src="images/rabbit2.png">
+</div>
+<div class="box1">
+	<img src="images/rabbit3.png">
+</div>
+<div class="box4">
+	<img src="images/rabbit4.png">
+</div>
+<br><a href="index.html">Home Page</a>
+</body>
+</html>
