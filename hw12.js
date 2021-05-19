@@ -1,0 +1,22 @@
+var double = prompt("Double digit number: ");
+var emotion = prompt("Emotion - noun: ");
+var verb = prompt("Verb: ");
+var number = prompt("Number: ");
+var plural = prompt("Noun - plural: ");
+var landmark = prompt("National landmark: ");
+var organ = prompt("Human organ: ");
+var kids = prompt("Number: ");
+var safety = prompt("Defensive tool: ");
+var place = prompt("Location: ");
+var sentence = "<h2>When I was " + double;
+sentence += ' years old, my mentor told me that to achieve ' + emotion;
+sentence += ', all you have to do is ' + verb;
+sentence += '. Those words changed my life. From that point forward, I never left the house without at least ' + number + ' ' + plural;
+sentence += '. When people saw me at the ' + landmark;
+sentence += ', they looked at me funny, but in my ' + organ;
+sentence += ' I knew I was doing the right thing. When I have kids - and I plan on having ' + kids;
+sentence +=  ' by the way - I’m going to make sure there’s always a ' + safety;
+sentence += ' next to their bed for their safety. I want to move to ' + place;
+sentence += ' for them, I hear they have great schools over there.</h2>  ';
+
+document.write(sentence);
