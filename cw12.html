@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type = "text/javascript">
+         <!--
+            function sayHydrate() {
+               alert("Make sure to drink some water :)")
+            }
+
+            function button2() {
+              document.getElementById("Spawn").innerHTML = "Appearing text";
+            }
+
+            function button3() {
+               //document.body.style.backgroundColor = "red";
+               document.getElementById("Magic").style.backgroundColor = "black";
+            }
+         //-->
+      </script>
+      </head>
+<body>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images/cw12.png" alt="Doggy" width="32" height="32">
+
+<p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+<p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+
+<script>
+function bigImg(x) {
+  x.style.height = "442px";
+  x.style.width = "640px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+
+<p>Click the following button and see result</p>
+      <div id="Spawn">
+
+      </div>
+      <div id="Magic">
+        Disappearing Text
+      </div>
+      <form>
+         <input type = "button" onclick = "sayHydrate()" value = "H2O" />
+         <input type = "button" onclick = "button2()" value = "Spawn" />
+         <input type = "button" onclick = "button3()" value = "Magic" />
+
+
+      </form>
+</body>
+</html>
