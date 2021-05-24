@@ -26,8 +26,8 @@ var racketBounceRate = 20;
 var wallSpeed = 5;
 var wallInterval = 1000;
 var lastAddTime = 0;
-var minGapHeight = 300;
-var maxGapHeight = 400;
+var minGapHeight = 250;
+var maxGapHeight = 350;
 var wallWidth = 80;
 var wallColors; //= color(226, 226, 20);
 var walls = [];
@@ -52,13 +52,11 @@ var inSecond = false;
 var oneRecto = 125;
 var twoRecto = 125;
 
-var pic = new Image();
-
 
 /***** Setup Block *****/
 
 function setup() {
-  createCanvas(window.screen.availWidth, window.screen.availHeight - 140);
+  createCanvas(window.screen.availWidth - 300, window.screen.availHeight - 340);
   ballX = width/4;
   ballY = height/5;
 
@@ -67,7 +65,6 @@ function setup() {
   wallColors = color(226, 226, 20);
   meteorSpeedHorizontal = round(random(-5, 5));
   meteorColor = color(206,102,17);
-  pic = loadImage("images/mayan.png");
 }
 
 /***** Draw Block *****/
@@ -110,7 +107,6 @@ function initScreen() {
 function playScreen() {
   background (255, 254, 222);
   tint(255, 255, 255, 150);
-  image(pic, 0, 0);
   drawBall();
   applyGravity();
   keepInScreen();

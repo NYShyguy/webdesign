@@ -1,0 +1,40 @@
+body{
+  background-image: url(images/lily.gif);
+  background size: 100%;
+}
+
+@keyframes move1 {
+  0% {left:0px; top:30px}
+  10% {top:0px}
+  20% {top:30px}
+  30% {top:0px}
+  40% {top:30px}
+  50% {top:0px}
+  60% {top:30px}
+  70% {top: 0px}
+  80% {top: 30px}
+  90% {top: 0px}
+  100% {left:70%; top:30px}
+}
+
+@keyframes move2 {
+  0% {left:0px;}
+  100% {left: 70%;}
+}
+
+.bird {
+    position: relative;
+    animation-name: move1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(40, end);
+}
+
+.rack {
+    position: relative;
+    animation-name: move2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(20,end);
+
+}
